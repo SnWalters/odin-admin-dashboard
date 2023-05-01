@@ -36,9 +36,13 @@ body {
     padding: 0;
 }
 
+.sidebar > .logo img {
+    height: 3rem;
+}
+
 .sidebar img {
     filter: invert(100%);
-    height: 3rem;
+    height: 1.5rem;
     width: auto;
 }
 
