@@ -205,6 +205,7 @@ header > .header-top {
     border-radius: 50px;
     color: #f9faf8;
     text-decoration: none;
+    transition-duration: .3s;
 }
 
 .header-links > a:hover {
