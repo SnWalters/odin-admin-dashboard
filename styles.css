@@ -72,11 +72,20 @@ li a:hover {
     text-decoration: underline;
 }
 
+li a:hover img {
+    text-decoration: none;
+    filter: invert(80%);
+}
+
+/* Header */
+
 header {
     background-color: #f9faf8;
     grid-area: 1 / 2 / 2 / 3;
     box-shadow: 0 3px 3px 5px #c0c0c0;
 }
+
+/* Main Cards */
 
 main {
     grid-area: 2 / 2 / 3 / 3;
