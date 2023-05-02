@@ -226,6 +226,7 @@ main {
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, calc(100% / 2));
     gap: 3%;
     flex: 3;
 }
@@ -234,7 +235,42 @@ main {
     background-color: #f9faf8;
     border-radius: 10px;
     border-left: 10px solid #f90;
+    padding: 6% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Card Content */
+
+.card-content > p {
+    margin: 0;
+}
+
+.card-content > p:first-of-type {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card > .options {
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card img {
+    height: 1.7rem;
+    width: auto;
+}
+
+.card img:hover {
+    cursor: pointer;
+    filter: invert(35%);
+}
+
+/* Your Projects / Announcements / Trending */
 
 .card, .announce, .trends {
     position: relative;
