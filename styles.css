@@ -232,22 +232,27 @@ main {
 }
 
 .card {
-    background-color: #f9faf8;
-    border-radius: 10px;
     border-left: 10px solid #f90;
-    padding: 6% 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.card, .announce, .trends {
+    background-color: #f9faf8;
+    border-radius: 10px;
+    padding: 6% 4%;
+}
+
 /* Card Content */
 
-.card-content > p {
+.card-content > p, .announce > p, .trends > p {
     margin: 0;
 }
 
-.card-content > p:first-of-type {
+.card-content > p:first-of-type,
+.announce > p:first-of-type,
+.trends:first-of-type {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 5px;
@@ -278,6 +283,7 @@ main {
 
 .card:first-of-type::before, .announce::before, .trends::before {
     position: absolute;
+    left: -5px;
     top: -30px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -296,9 +302,7 @@ main {
 }
 
 .announce, .trends {
-    background-color: #f9faf8;
     flex: 1;
-    border-radius: 10px;
 }
 
 .announce::before {
