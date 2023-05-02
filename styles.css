@@ -250,9 +250,7 @@ main {
     margin: 0;
 }
 
-.card-content > p:first-of-type,
-.announce > p:first-of-type,
-.trends:first-of-type {
+.card-content > p:first-of-type, .bold {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 5px;
@@ -299,6 +297,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 9%;
+}
+
+.bold + p {
+    font-size: .9rem;
+}
+
+hr {
+    border: 1px solid #cbd5e1;
 }
 
 .announce, .trends {
