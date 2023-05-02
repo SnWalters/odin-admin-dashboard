@@ -156,6 +156,62 @@ header > .header-top {
 
 /* Bottom of the Header */
 
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+}
+
+.user-welcome {
+    display: flex;
+    gap: 25px;
+    padding: 10px 30px;
+}
+
+.hi, .user-name {
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 1.4rem;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.welcome > p {
+    margin: 0;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+.header-links > a {
+    background-color: #3882f6;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #f9faf8;
+    text-decoration: none;
+}
+
+.header-links > a:hover {
+    background-color: #cbd5e1;
+    color: #3882f6;
+}
+
 /* Main Cards */
 
 main {
