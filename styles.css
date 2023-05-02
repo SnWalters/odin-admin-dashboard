@@ -83,7 +83,78 @@ header {
     background-color: #f9faf8;
     grid-area: 1 / 2 / 2 / 3;
     box-shadow: 0 3px 3px 5px #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px;
 }
+
+/* Top of the Header */
+
+header > .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 15px;
+    flex: 3;
+}
+
+.search-bar > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9faf800;
+    border: none;
+}
+
+.search-bar > button:hover, .alert:hover, .user-image:hover {
+    cursor: pointer;
+}
+
+.search-bar > button > img {
+    height: 1.5rem;
+    width: auto;
+}
+
+.search {
+    width: 90%;
+    border-radius: 25px;
+    border: none;
+    background-color: #cbd5e1;
+    padding: 10px 25px;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.alert {
+    height: 1.5rem;
+    width: auto;
+}
+
+.alert:hover {
+    filter: invert(35%);
+}
+
+.user-image {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+/* Bottom of the Header */
 
 /* Main Cards */
 
