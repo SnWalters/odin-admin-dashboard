@@ -246,7 +246,7 @@ main {
 
 /* Card Content */
 
-.card-content > p, .announce > p, .trends > p {
+.card-content > p, .announce > p, .trends > p, .user-trend > p {
     margin: 0;
 }
 
@@ -339,8 +339,8 @@ hr {
 }
 
 .trends-user img {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
 }
 
@@ -350,4 +350,8 @@ hr {
 
 .card, .announce, .trends {
     box-shadow: 3px 3px 3px 3px #c0c0c0;
+}
+
+.user-trend > p:first-of-type {
+    margin-bottom: 5px;
 }
