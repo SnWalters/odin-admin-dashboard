@@ -10,7 +10,7 @@ body {
     background-color: #cbd5e1;
     display: grid;
     grid-template-rows: 2fr 8fr;
-    grid-template-columns: 2fr 7fr;
+    grid-template-columns: 2fr 8fr;
     width: 100vw;
     height: 100vh;
 }
@@ -238,7 +238,7 @@ main {
     justify-content: space-between;
 }
 
-.card, .announce, .trends {
+.card, .announce {
     background-color: #f9faf8;
     border-radius: 10px;
     padding: 6% 4%;
@@ -254,6 +254,10 @@ main {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 5px;
+}
+
+.card-content > p:first-of-type + p, .bold + p, .user-trend > p + p {
+    color: #404040;
 }
 
 .card > .options {
@@ -313,6 +317,31 @@ hr {
 
 .announce::before {
     content: "Announcements";
+}
+
+/* Trending */
+
+.trends {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trends {
+    background-color: #f9faf8;
+    border-radius: 10px;
+    padding: 6% 4%;
+}
+
+.trends-user {
+    display: flex;
+    gap: 9%;
+}
+
+.trends-user img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
 }
 
 .trends::before {
