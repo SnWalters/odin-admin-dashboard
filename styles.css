@@ -9,6 +9,7 @@ body {
 #container {
     background-color: #cbd5e1;
     display: grid;
+    font-family: "URW Gothic L";
     grid-template-rows: 2fr 8fr;
     grid-template-columns: 2fr 8fr;
     width: 100vw;
