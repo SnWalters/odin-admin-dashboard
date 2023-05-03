@@ -347,3 +347,7 @@ hr {
 .trends::before {
     content: "Trending";
 }
+
+.card, .announce, .trends {
+    box-shadow: 3px 3px 3px 3px #c0c0c0;
+}
