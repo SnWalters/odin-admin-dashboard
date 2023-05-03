@@ -144,7 +144,7 @@ header > .header-top {
     width: auto;
 }
 
-.alert:hover {
+.alert:hover, button:hover > img {
     filter: invert(35%);
 }
 
